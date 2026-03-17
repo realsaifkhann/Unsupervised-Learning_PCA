@@ -93,18 +93,6 @@ Standardizing all features to mean 0 and standard deviation 1 levels the playing
 
 ---
 
-## PCA vs other reduction techniques
-
-| | PCA | t-SNE | UMAP |
-|---|---|---|---|
-| Purpose | Reduction + modeling | Visualization only | Visualization + some modeling |
-| Preserves | Global variance | Local structure | Both local and global |
-| Speed | Fast | Slow | Faster than t-SNE |
-| Interpretability | Low | Very low | Low |
-| Best for | Preprocessing before models | Exploring clusters visually | Modern visualization tasks |
-
----
-
 ## Key takeaways
 
 - PCA is a transformer, not a predictive model — it has no target variable
@@ -112,7 +100,3 @@ Standardizing all features to mean 0 and standard deviation 1 levels the playing
 - Choose `n_components` based on cumulative explained variance — 95% is the standard threshold
 - Larger eigenvalue = that principal component captures more variance = more important
 - PCA is best used before algorithms that are sensitive to dimensionality like SVM, KNN, and Logistic Regression
-
----
-
-*Part of my daily machine learning practice series.*
